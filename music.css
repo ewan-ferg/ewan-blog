@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 html{
     background-color:#AF1A1C;
     background-image: url(backgrounds/background.png);
-
+    font-family: "Work Sans", sans-serif;
 }
 
 nav{

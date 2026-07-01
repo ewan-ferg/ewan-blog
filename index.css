@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 html{
     background-color:#AF1A1C;
     background-image: url(backgrounds/background.png);
-
+    font-family: "Work Sans", sans-serif;
 }
 nav{
-    justify-items: center;
+    justify-content: center;
 }
+
+.card-group a, .card-group a:visited{
+    text-decoration: underline;
+    color: black;
+}
+
 .card-group{
     display: flex;
     flex-direction: row;
@@ -13,4 +20,64 @@ nav{
     justify-content:space-around;
     align-items: stretch;
     background-color: #DFA12A;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color:whitesmoke;
+}
+
+
+.about-me img{
+    object-fit: contain;
+    width: 50%;
+    height: auto;
+
+}
+
+.about-me-text{
+    color: whitesmoke;
+    text-align: center;
+    width: 50%;
+}
+
+.about-me-text p{
+    font-size: 1.5em;
+}
+.about-me-text h1{
+    font-size: 3em;
+    
+}
+
+.article-grid-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.articles-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 75%;
+    gap: 10px;
+}
+
+.article{
+    background-color: #d8d8d87c;
+    padding: 10px;
+}
+
+.article img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.featured-articles-title{
+    
+    text-align: center;
+    background-color: #d8d8d87c;
 }
