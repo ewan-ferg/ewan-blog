@@ -1,0 +1,16 @@
+html{
+    background-color:#AF1A1C;
+    background-image: url(background.png);
+
+}
+nav{
+    justify-items: center;
+}
+.card-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: stretch;
+    background-color: #DFA12A;
+}
