@@ -32,7 +32,7 @@ nav{
 
 .about-me img{
     object-fit: contain;
-    width: 50%;
+    width: 35%;
     height: auto;
 
 }
@@ -40,6 +40,7 @@ nav{
 .about-me-text{
     color: whitesmoke;
     text-align: center;
+    padding-left: 2%;
     width: 50%;
 }
 
@@ -68,6 +69,10 @@ nav{
 .article{
     background-color: #d8d8d87c;
     padding: 10px;
+}
+
+.article h2{
+    text-align: center;
 }
 
 .article img{
