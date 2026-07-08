@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
-    background-color:#AF1A1C;
+    background-color:#DFA12A;
     background-image: url(backgrounds/background.png);
     font-family: "Work Sans", sans-serif;
 }
 nav{
-    justify-content: center;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #DFA12A;
 }
 
 .card-group a, .card-group a:visited{
@@ -15,11 +27,8 @@ nav{
 
 .card-group{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: stretch;
-    background-color: #DFA12A;
+    gap: 2rem;
+    list-style-type: none;
 }
 
 .about-me{
@@ -27,6 +36,8 @@ nav{
     flex-direction: row;
     background-color: black;
     color:whitesmoke;
+    margin-bottom: 20px;
+    min-height: fit-content;
 }
 
 
@@ -34,7 +45,6 @@ nav{
     object-fit: contain;
     width: 35%;
     height: auto;
-
 }
 
 .about-me-text{
@@ -42,6 +52,7 @@ nav{
     text-align: center;
     padding-left: 2%;
     width: 50%;
+    margin-top: 2%;
 }
 
 .about-me-text p{
@@ -49,6 +60,14 @@ nav{
 }
 .about-me-text h1{
     font-size: 3em;
+}
+
+.about-me a{
+    background-color: #DFA12A;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
     
 }
 
