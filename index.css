@@ -18,12 +18,33 @@ nav{
     position: sticky;
     top: 0;
     background-color: #DFA12A;
+    min-height: 7.5vh;
 }
 
-.card-group a, .card-group a:visited{
-    text-decoration: underline;
+.topic-card a{
     color: black;
+    text-decoration: none;
+    position: relative;
+    display:inline-block;
 }
+
+.topic-card a::after{
+    content: '';
+    position:absolute;
+    width:100%;
+    height: 2px;
+    background: black;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+}
+
+.topic-card a:hover::after{
+    transform: scaleX(1);
+}
+
 
 .card-group{
     display: flex;
@@ -37,14 +58,15 @@ nav{
     background-color: black;
     color:whitesmoke;
     margin-bottom: 20px;
-    min-height: fit-content;
+    width: fit-content;
+    justify-content: center;
 }
 
 
 .about-me img{
     object-fit: contain;
-    width: 35%;
-    height: auto;
+    width: 25%;
+    min-height: 45vh;
 }
 
 .about-me-text{
@@ -68,7 +90,20 @@ nav{
     font-size: 1.5rem;
     text-decoration: none;
     color: black;
-    
+    white-space: nowrap;
+    box-shadow: 6px 6px 0px 0px whitesmoke;
+    transition: 0.2s;
+}
+
+.about-me a:hover{
+    transition: 0.5s;
+    box-shadow: 10px 10px 0px 0px whitesmoke;
+    transform: skewX(-15deg) translateY(-5px);
+}
+
+.about-me a:focus{
+    outline: none;
+    transition: 0.5s;
 }
 
 .article-grid-container{
@@ -85,9 +120,24 @@ nav{
     gap: 10px;
 }
 
+.article a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 .article{
-    background-color: #d8d8d87c;
+    background-color: black;
     padding: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.article:hover{
+    transition: 0.4s;
+    transform: translateY(-5px);
+
 }
 
 .article h2{
@@ -95,13 +145,17 @@ nav{
 }
 
 .article img{
-    width: 100%;
+    display: flex;
+    width: auto;
     height: 200px;
     object-fit: contain;
+    border:3px solid #DFA12A;
+    border-radius: 5px;
+    justify-self: center;
 }
 
 .featured-articles-title{
-    
     text-align: center;
-    background-color: #d8d8d87c;
+    background-color: black;
+    color: whitesmoke;
 }
